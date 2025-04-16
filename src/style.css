@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+
+    /* Font family */
+    --font-bricolage: "Bricolage Grotesque", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+     /* brakpoint */
+    --breakpoint-1xl: 90rem;    /* 1440px */
+
+    /* shadow */
+    --shadow-3xl: 0px 4px 24px rgba(0, 0, 0, 0.05);
+
+    /* color */
+  --color-body: #6D6D6D;
+  --color-primary: #222222;
+  --color-secondary: #DD3142;
+  --color-dark-primary: #17134a;
+  --color-blue-primary: #3a30ba;
+  --color-forbackground-primary: #FFF9F3;
+
+  /* border radius */
+  --radius-ex-sm: 0.313rem;    /* 5px */
+
+
+
+  }
+
+  body{
+    @apply text-xs text-body leading-[100%] font-roboto font-normal min-w-80
+  }
+
+
+
+  @layer components{
+    .menu-li{
+      @apply border-b-2 border-white transition-all duration-500 hover:border-secondary
+    }
+    .menu-li-a{
+      @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  @utility container{ 
+    @apply mx-auto px-4;
+    @media (width >= 90rem /* 1440px */) {
+          max-width: var(--breakpoint-1xl) /* 1440px */;
+          padding-inline: 8.438rem    /* 135px */; 
+      }
+  }
