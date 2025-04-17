@@ -29,18 +29,34 @@
   }
 
   body{
-    @apply text-xs text-body leading-[100%] font-roboto font-normal min-w-80
+    @apply text-xs text-body leading-normal font-roboto font-normal min-w-80
   }
+  button{
+    @apply cursor-pointer
+  }
+
+  @layer base{
+    h1,
+    .h1{
+      @apply text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-black leading-[100%]
+    }
+    h3{
+      @apply text-3xl font-medium uppercase text-[#0E0E0E] leading-[100%]
+    }
+
+    p{
+      @apply text-base font-normal leading-[134%]
+  }
+}
 
 
 
   @layer components{
-    .menu-li{
-      @apply border-b-2 border-white transition-all duration-500 hover:border-secondary
-    }
+    
     .menu-li-a{
-      @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all
+      @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible border-b-2 border-white transition-all duration-500 hover:border-secondary
     }
+    
   }
 
 
