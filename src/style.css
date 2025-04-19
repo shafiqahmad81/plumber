@@ -35,6 +35,10 @@
     @apply cursor-pointer
   }
 
+  .service li{
+    @apply  relative before:absolute before:w-[15px] before:h-[15px] before:border-3 before:border-secondary before:rounded-full
+  }
+
   @layer base{
     h1,
     .h1{
