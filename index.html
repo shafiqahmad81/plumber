@@ -18,24 +18,31 @@
         <a class="w-24 sm:w-[165px]" href="#">
           <img src="src/assets/img/logo.png" alt="logo">
         </a>
-        <div class="hidden lg:flex flex-col lg:flex-row gap-5 lg:gap-10 pt-8 lg:pt-0">
+        <div id="menu" class="hidden lg:flex flex-col lg:flex-row gap-5 lg:gap-10 pt-8 lg:pt-0">
           <ul class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[37px] mt-1.5">
-            <li><a data-title="Home" class="menu-li-a font-bold border-b-2 border-secondary" href="#">Home</a></li>
-            <li><a data-title="About us" class="menu-li-a duration-500" href="#">About us</a></li>
-            <li class="-mr-[7px]"><a data-title="Services" class="menu-li-a" href="#">Services</a></li>
-            <li><a data-title="Project" class="menu-li-a" href="#">Project</a></li>
-            <li><a data-title="Blogs" class="menu-li-a" href="#">Blogs</a></li>
-            <li><a data-title="Contact" class="menu-li-a" href="#">Contact</a></li>
+            <li data-title="Home"><a class="menu-li-a font-bold border-b-2 border-secondary" href="#">Home</a></li>
+            <li data-title="About us"><a class="menu-li-a duration-500" href="#">About us</a></li>
+            <li data-title="Services" class="-mr-[7px]"><a class="menu-li-a" href="#">Services</a></li>
+            <li data-title="Project"><a class="menu-li-a" href="#">Project</a></li>
+            <li data-title="Blogs"><a class="menu-li-a" href="#">Blogs</a></li>
+            <li data-title="Contact"><a class="menu-li-a" href="#">Contact</a></li>
           </ul>
-          <a class="bg-secondary pl-[0.563rem] pr-2 pt-3 pb-2.5 text-xs text-white uppercase font-bold rounded-ex-sm whitespace-nowrap"
+          <a class="bg-secondary pl-[0.563rem] pr-2 pt-3 pb-2.5 text-xs text-white uppercase font-bold rounded-ex-sm whitespace-nowrap hover:bg-primary transition-all duration-500 block"
             href="#">Request a call
             Back</a>
         </div>
-        <div class="lg:hidden w-24 sm:w-[165px]">
+        <div id="hamburger-icon" class="lg:hidden w-24 sm:w-[165px]">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6 ml-auto">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
+        </div>
+        <div id="close-icon" class="hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+
         </div>
       </div>
     </div>
@@ -51,7 +58,7 @@
         <h2
           class="text-2xl lg:text-[2.125rem] text-black uppercase font-bricolage font-extrabold mt-[17px] tracking-tighter">
           +1800-9938-2839</h2>
-        <a class="px-[17px] pt-[13px] pb-3 bg-secondary rounded-4xl text-white uppercase text-base inline-block mt-2"
+        <a class="px-[17px] pt-[13px] pb-3 bg-secondary rounded-4xl text-white uppercase text-base inline-block mt-2 hover:bg-primary transition-all duration-500"
           href="#">See All Service</a>
       </div>
       <div class="w-full lg:w-[calc(100%-43.760%)]">
@@ -73,8 +80,7 @@
             services—offering
             smart leak detection, routine maintenance, and quick repair solutions to keep your home's water systems
             running smoothly.</p>
-          <button
-            class="px-[17px] pt-1.5 pb-[7px] leading-[100%] text-base text-black bg-white underline rounded-ex-sm mt-2.5 lg:ml-2">Learn
+          <button class="service-btn mt-2.5 lg:ml-2">Learn
             More</button>
         </div>
         <div class="w-full md:w-px h-px md:h-[228px] bg-white"></div>
@@ -88,8 +94,7 @@
             services—featuring
             advanced leak detection, system upgrades, and preventive maintenance tailored for hotels, offices, and large
             facilities..</p>
-          <button
-            class="px-[17px] pt-1.5 pb-[7px] leading-[100%] text-base text-black bg-white underline rounded-ex-sm mt-4 lg:ml-1.5">Learn
+          <button class="service-btn mt-4 lg:ml-1.5">Learn
             More</button>
         </div>
         <div class="w-full md:w-px h-px md:h-[228px] bg-white"></div>
@@ -103,8 +108,7 @@
             prevent potential
             issues, offering real-time monitoring, leak detection, and system optimization to ensure your plumbing
             infrastructure runs efficiently at all times.</p>
-          <button
-            class="px-[17px] pt-1.5 pb-[7px] leading-[100%] text-base text-black bg-white underline rounded-ex-sm mt-2.5 lg:ml-[18px]">Learn
+          <button class="service-btn mt-2.5 lg:ml-[18px]">Learn
             More</button>
         </div>
       </div>
@@ -124,13 +128,18 @@
           homes and businesses. With years of experience and a commitment to quality, we handle everything from leaky
           faucets to full system installations. Your satisfaction is our top priority.</p>
         <button
-          class="px-5 py-[11px] bg-secondary rounded-4xl text-white uppercase underline text-base inline-block mt-[6px]">Learn
+          class="px-5 py-[11px] bg-secondary rounded-4xl text-white uppercase underline text-base inline-block mt-[6px] hover:bg-primary transition-all duration-500">Learn
           More</button>
       </div>
 
       <!-- play button -->
       <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
-        <img src="src/assets/img/video-icon.png" alt="video-icon">
+        <svg class=" fill-[#DD3142] hover:fill-[#EEFF06] transition-all duration-500" xmlns="http://www.w3.org/2000/svg"
+          width="74" height="74" fill="none">
+          <path
+            d="M73.568 37.167a2.07 2.07 0 0 0 .106-.676 36.838 36.838 0 1 0-.183 4.037c.119-1.182-.81-2.186-1.996-2.236-1.187-.05-2.183.874-2.31 2.055a32.537 32.537 0 1 1 .189-3.705c0 .13.012.26.036.388.4 2.166 3.425 2.369 4.112.277l.046-.14Z" />
+          <path d="M53.892 37.2 28.197 51.48l.48-29.393L53.893 37.2Z" />
+        </svg>
       </button>
     </div>
   </section>
@@ -171,20 +180,36 @@
     </div>
     <div class="mt-[62px] lg:pr-1 flex flex-col sm:flex-row  gap-y-10 lg:gap-y-0 items-center justify-between">
       <ul class=" service space-y-[26px] lg:ml-1.5">
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Residental Service</a></li>
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Commercial Service</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Residental Service</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Commercial Service</a></li>
       </ul>
       <ul class=" service space-y-[26px] lg:-ml-[52px]">
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Residental Service</a></li>
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Commercial Service</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Residental Service</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Commercial Service</a></li>
       </ul>
       <ul class=" service space-y-[26px]">
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Maintenance</a></li>
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Residental Service</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Maintenance</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Residental Service</a></li>
       </ul>
       <ul class=" service space-y-[26px]">
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Maintenance</a></li>
-        <li><a class="pl-[25px] text-sm font-medium leading-[100%] text-black" href="">Residental Service</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Maintenance</a></li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Residental Service</a></li>
       </ul>
     </div>
   </section>
@@ -242,15 +267,48 @@
   </section>
 
   <!-- Testiomonial section -->
-  <section
-    class="max-w-[1440px] mx-auto mt-[108px] bg-cover bg-center bg-no-repeat relative after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-black/70"
-    style="background-image: url(src/assets/img/testimonial-bg.png);">
-    <div class="container pt-[45px] pb-[36px] text-center relative z-20">
-      <h3 class="text-[#EEFF06] mb-10 mt-0.5 -ml-2">Testimonial</h3>
-      <p class="text-xl text-white mb-5 max-w-[930px] mx-auto">I had a leaking pipe that was causing a lot of
-        stress, but the team arrived quickly and fixed everything perfectly. They were professional, friendly, and
-        explained every step of the process. I highly recommend their plumbing services!</p>
-      <span class="text-xl text-white leading-6 font-bold font-mukta mb-9 block">Johny Vino</span>
+  <section>
+    <div
+      class="max-w-[1440px] mx-auto mt-[108px] bg-cover bg-center bg-no-repeat relative after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-black/70"
+      style="background-image: url(src/assets/img/testimonial-bg.png);">
+      <div class="container pt-[45px] pb-[33px] text-center relative z-20">
+        <h3 class="text-[#EEFF06] mb-10 mt-0.5 -ml-2">Testimonial</h3>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="text-xl text-white mb-5 max-w-[930px] mx-auto">I had a leaking pipe that was causing a lot of
+                stress, but the team arrived quickly and fixed everything perfectly. They were professional, friendly,
+                and
+                explained every step of the process. I highly recommend their plumbing services!</p>
+              <span class="text-xl text-white leading-6 font-bold font-mukta mb-10 block">Johny Vino</span>
+            </div>
+            <div class="swiper-slide">
+              <p class="text-xl text-white mb-5 max-w-[930px] mx-auto">I had a leaking pipe that was causing a lot of
+                stress, but the team arrived quickly and fixed everything perfectly. They were professional, friendly,
+                and
+                explained every step of the process. I highly recommend their plumbing services!</p>
+              <span class="text-xl text-white leading-6 font-bold font-mukta mb-10 block">Johny Vino</span>
+            </div>
+            <div class="swiper-slide">
+              <p class="text-xl text-white mb-5 max-w-[930px] mx-auto">I had a leaking pipe that was causing a lot of
+                stress, but the team arrived quickly and fixed everything perfectly. They were professional, friendly,
+                and
+                explained every step of the process. I highly recommend their plumbing services!</p>
+              <span class="text-xl text-white leading-6 font-bold font-mukta mb-10 block">Johny Vino</span>
+            </div>
+            <div class="swiper-slide">
+              <p class="text-xl text-white mb-5 max-w-[930px] mx-auto">I had a leaking pipe that was causing a lot of
+                stress, but the team arrived quickly and fixed everything perfectly. They were professional, friendly,
+                and
+                explained every step of the process. I highly recommend their plumbing services!</p>
+              <span class="text-xl text-white leading-6 font-bold font-mukta mb-10 block">Johny Vino</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
     </div>
   </section>
 

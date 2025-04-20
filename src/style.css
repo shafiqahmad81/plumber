@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@import 'swiper/css';
 
 @theme {
 
@@ -35,6 +36,16 @@
   button{
     @apply cursor-pointer
   }
+  .swiper-horizontal > .swiper-pagination-bullets{
+    @apply -bottom-0.5
+  }
+  .swiper-pagination-bullet {
+    @apply w-1.5 h-1.5 bg-[#E2E2E2] opacity-100 mx-0.5! rounded-full transition-all duration-500;
+  }
+  
+  .swiper-pagination-bullet-active {
+    @apply bg-secondary;
+  }
 
   .service li{
     @apply  relative before:absolute before:w-[15px] before:h-[15px] before:border-3 before:border-secondary before:rounded-full
@@ -57,9 +68,11 @@
 
 
   @layer components{
-    
+    .service-btn{
+      @apply px-[17px] pt-1.5 pb-[7px] leading-[100%] text-base text-black bg-white underline rounded-ex-sm hover:bg-primary hover:text-white transition-all duration-500
+    }
     .menu-li-a{
-      @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transform after:scale-x-0 border-b-2 border-white transition-all duration-500 hover:border-secondary group-hover:after:scale-x-100 after:origin-left 
+      @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transform after:scale-x-0 border-b-2 border-white transition-all duration-500 hover:border-secondary after:hover:scale-x-100 after:origin-left 
     }
     
   }
