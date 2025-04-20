@@ -59,7 +59,7 @@
   @layer components{
     
     .menu-li-a{
-      @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible border-b-2 border-white transition-all duration-500 hover:border-secondary
+      @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transform after:scale-x-0 border-b-2 border-white transition-all duration-500 hover:border-secondary group-hover:after:scale-x-100 after:origin-left 
     }
     
   }
