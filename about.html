@@ -20,8 +20,9 @@
         </a>
         <div id="menu" class="hidden lg:flex flex-col lg:flex-row gap-5 lg:gap-10 pt-8 lg:pt-0">
           <ul class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[38px] mt-1.5">
-            <li data-title="Home"><a class="menu-li-a font-bold border-b-2 border-secondary" href="#">Home</a></li>
-            <li data-title="About us"><a class="menu-li-a" href="about.html">About us</a></li>
+            <li data-title="Home"><a class="menu-li-a " href="index.html">Home</a></li>
+            <li data-title="About us"><a class="menu-li-a font-bold border-b-2 border-secondary" href="#">About us</a>
+            </li>
             <li data-title="Services" class="-mr-[7px]"><a class="menu-li-a" href="#">Services</a></li>
             <li data-title="Project"><a class="menu-li-a" href="#">Project</a></li>
             <li data-title="Blogs"><a class="menu-li-a" href="#">Blogs</a></li>
@@ -49,178 +50,108 @@
   </header>
 
   <!-- Hero section -->
-  <section class="container mt-12">
-    <div class="flex flex-col lg:flex-row items-center justify-between ">
-      <div class="w-full lg:w-[43.760%] max-w-96 lg:max-w-full xl:pr-32 pt-1.5 text-center lg:text-start">
-        <h1 class="uppercase font-bricolage font-extrabold tracking-wide">Call
-          us
-          For Any<span class="font-medium inline-block pt-2 tracking-normal">Plumbing Needs</span></h1>
-        <h2
-          class="text-2xl lg:text-[2.125rem] text-black uppercase font-bricolage font-extrabold mt-[17px] tracking-tighter">
-          +1800-9938-2839</h2>
-        <a class="px-[17px] pt-[13px] pb-3 bg-secondary rounded-4xl text-white uppercase text-base inline-block mt-2 hover:bg-primary transition-all duration-500"
-          href="#">See All Service</a>
-      </div>
-      <div class="w-full lg:w-[calc(100%-43.760%)]">
-        <img src="src/assets/img/hero-image.png" alt="hero-image">
-      </div>
-    </div>
-  </section>
-
-  <!-- Service section -->
-  <section class="bg-secondary pt-[42px] pb-[27px]">
-    <div class="container">
-      <div class=" lg:px-[130px] flex flex-col md:flex-row items-center gap-5 lg:gap-[46px] text-center">
-        <div class="w-[237px] pt-6 flex flex-col items-center">
-          <div class="w-[50px] mb-[15px]">
-            <img src="src/assets/icon/icon-1.png" alt="Service">
-          </div>
-          <h6 class="mb-3 text-white text-sm font-medium">Residental Service</h6>
-          <p class="text-white text-xs leading-[134%] line-clamp-3">Experience hassle-free plumbing with our residential
-            services—offering
-            smart leak detection, routine maintenance, and quick repair solutions to keep your home's water systems
-            running smoothly.</p>
-          <button class="service-btn mt-2.5 lg:ml-2">Learn
-            More</button>
-        </div>
-        <div class="w-full md:w-px h-px md:h-[228px] bg-white"></div>
-        <div class="w-[244px] pt-5 flex flex-col items-center">
-          <div class="w-12 mb-4">
-            <img src="src/assets/icon/icon-2.png" alt="Service">
-          </div>
-          <h6 class="mb-3 text-white text-sm font-medium">Commercial Service</h6>
-          <p class="text-white text-xs leading-[134%] line-clamp-3">Ensure smooth operations with our commercial
-            plumbing
-            services—featuring
-            advanced leak detection, system upgrades, and preventive maintenance tailored for hotels, offices, and large
-            facilities..</p>
-          <button class="service-btn mt-4 lg:ml-1.5">Learn
-            More</button>
-        </div>
-        <div class="w-full md:w-px h-px md:h-[228px] bg-white"></div>
-        <div class="w-[244px] pt-5 flex flex-col items-center">
-          <div class="w-[60px] mb-[7px]">
-            <img src="src/assets/icon/icon-3.png" alt="Service">
-          </div>
-          <h6 class="mb-3 text-white text-sm font-medium">Maintenance</h6>
-          <p class="text-white text-xs leading-[134%] line-clamp-3">Our plumbing maintenance services use AI to predict
-            and
-            prevent potential
-            issues, offering real-time monitoring, leak detection, and system optimization to ensure your plumbing
-            infrastructure runs efficiently at all times.</p>
-          <button class="service-btn mt-2.5 lg:ml-[18px]">Learn
-            More</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Plumber Company Section -->
-  <section class="container mt-[81px] mb-[76px]">
-    <div class="bg-center bg-cover bg-no-repeat pt-[51px] pb-[61px] relative"
-      style="background-image: url(src/assets/img/plumber-company.png);">
-      <div class="max-w-[542px] pt-[22px] pb-[17px] pl-5 sm:pl-[49px] pr-5 sm:pr-[61px] bg-white/70">
-        <h2 class="h1 max-w-[366px] md:leading-[52px]">Welcome to
-          Plumber Company</h2>
-        <p class="mt-3 mb-[31px] text-sm text-black leading-[100%] line-clamp-4">At Plumber Company, we provide trusted
-          and professional plumbing
-          services to
-          homes and businesses. With years of experience and a commitment to quality, we handle everything from leaky
-          faucets to full system installations. Your satisfaction is our top priority.</p>
-        <button
-          class="px-5 py-[11px] bg-secondary rounded-4xl text-white uppercase underline text-base inline-block mt-[6px] hover:bg-primary transition-all duration-500">Learn
-          More</button>
-      </div>
-
-      <!-- play button -->
-      <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
-        <svg class=" fill-[#DD3142] hover:fill-[#EEFF06] transition-all duration-500" xmlns="http://www.w3.org/2000/svg"
-          width="74" height="74" fill="none">
-          <path
-            d="M73.568 37.167a2.07 2.07 0 0 0 .106-.676 36.838 36.838 0 1 0-.183 4.037c.119-1.182-.81-2.186-1.996-2.236-1.187-.05-2.183.874-2.31 2.055a32.537 32.537 0 1 1 .189-3.705c0 .13.012.26.036.388.4 2.166 3.425 2.369 4.112.277l.046-.14Z" />
-          <path d="M53.892 37.2 28.197 51.48l.48-29.393L53.893 37.2Z" />
-        </svg>
-      </button>
-    </div>
-  </section>
-
-  <!-- Company history section -->
-  <section class="bg-secondary pt-[38px] pb-[37px]">
-    <div class="container flex flex-col md:flex-row items-start gap-10 xl:gap-[98px]">
-      <div class="w-full md:w-[56%] lg:w-[54.123%]">
-        <img src="src/assets/img/image1.jpg" alt="employ">
-      </div>
-      <div class="w-full md:w-[38%] lg:w-[37.270%] pt-4 mr-2 text-white leading-[100%]">
-        <h2 class="h1 text-white mb-[18px]">Our Company History</h2>
-        <p class="mb-[34px] text-sm line-clamp-4">Plumber Company was founded with a mission to provide reliable,
-          high-quality
-          plumbing solutions to our
-          community. What began as a small family-run business has grown into a trusted name with decades of hands-on
-          experience. From humble beginnings fixing local leaks to managing large-scale plumbing installations, our
-          commitment to exceptional service and customer satisfaction has remained unchanged.</p>
-        <span class="text-3xl font-light">Trust Our Team of Experts</span>
-        <p class="line-clamp-4 text-sm mt-3.5">Our licensed and experienced plumbers are dedicated to delivering
-          top-notch
-          service with
-          every job. Whether
-          it’s a minor repair or a major installation, you can count on our team to work with precision,
-          professionalism, and care. We take pride in solving problems quickly and efficiently, so you can enjoy peace
-          of mind.</p>
+  <section class="max-w-[1440px] mx-auto bg-center bg-cover bg-no-repeat relative"
+    style="background-image: url(src/assets/img/plumber-company.png);">
+    <div class="absolute left-0 top-0 right-0 bottom-0 bg-linear-to-r/srgb from-secondary to-gray/0"></div>
+    <div class=" container pt-[129px] pb-12">
+      <div class="max-w-[432px] relative z-30">
+        <h1 class="font-black text-[#EEFF06] uppercase">About us</h1>
+        <p class="text-sm text-white leading-4 mt-[19px]">With years of experience and a passion for excellence, we
+          provide reliable plumbing solutions for both homes and businesses. From small repairs to full system
+          installations, our licensed team is committed to quality workmanship and customer satisfaction.</p>
       </div>
     </div>
   </section>
 
   <!-- Plumber Points section -->
-  <section class="container pt-[89px] pb-[66px]">
-    <div class="text-center sm:px-10 md:px-[94px]">
-      <h3 class="mb-4">Plumber Points</h3>
-      <p>At Plumber Company, we stand out for our commitment to quality, transparency, and customer satisfaction. From
-        24/7 emergency services to upfront pricing and skilled technicians, we make plumbing stress-free and reliable.
-      </p>
+  <section class="container pt-11 pb-[82px]">
+    <div class="text-start">
+      <h3 class="mb-[27px]">Plumber Points Company</h3>
+      <p class="mb-5">We are a trusted plumbing service point, dedicated to solving your water and pipe issues quickly
+        and efficiently. Whether it’s a leaking tap, clogged drain, or full system installation — our expert team is
+        ready 24/7 to serve with professionalism and care.<br>
+        Your comfort is our commitment. Call us today for reliable plumbing solutions!</p>
+
+      <p class="mb-5 line-clamp-2">At PipeFix Plumbing Solutions, we’ve been delivering reliable and affordable plumbing
+        services for
+        over 20 years. From leaky faucets and burst pipes to full bathroom installations, our certified professionals
+        handle it all with care and precision.We take pride in serving homes and businesses with 24/7 emergency support
+        and guaranteed satisfaction.</p>
+
+      <p class="line-clamp-2">Providing top-notch plumbing services that stand the test of time. While tools and
+        techniques have evolved, our commitment to quality has remained unchanged. From traditional repairs to modern
+        plumbing systems, we combine experience with innovation to keep your water flowing smoothly.
+        Trusted by homeowners and businesses alike — we’re here when you need us most.</p>
     </div>
-    <div class="mt-[62px] lg:pr-1 flex flex-col sm:flex-row  gap-y-10 lg:gap-y-0 items-center justify-between">
-      <ul class=" service space-y-[26px] lg:ml-1.5">
+    <div class="mt-[57px] lg:pr-1 flex flex-col sm:flex-row items-center justify-between">
+      <ul class="w-full md:w-[40.599%] service space-y-[30px]">
         <li><a
             class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Residental Service</a></li>
+            href="">Residental Service</a>
+          <p class="mt-1.5 ml-[26px]">We offer expert plumbing solutions for your home — from fixing leaks and clogged
+            drains to full bathroom and kitchen installations. Trusted, affordable, and always on time.</p>
+        </li>
         <li><a
             class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Commercial Service</a></li>
+            href="">Commercial Service</a>
+          <p class="mt-1.5 ml-[26px]">We specialize in plumbing solutions for offices, restaurants, retail
+            spaces, and
+            industrial buildings. From regular maintenance to large-scale installations.</p>
+        </li>
+        <li><a
+            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
+            href="">Maintenance</a>
+          <p class="mt-1.5 ml-[26px]">Regular plumbing maintenance helps prevent costly repairs and keeps
+            your system
+            running efficiently. We offer scheduled checkups, pipe inspections.</p>
+        </li>
       </ul>
-      <ul class=" service space-y-[26px] lg:-ml-[52px]">
+      <ul class="w-full md:w-[40.599%] service space-y-[30px] mt-10 md:mt-0">
         <li><a
             class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Residental Service</a></li>
+            href="">Residental Service</a>
+          <p class="mt-1.5 ml-[26px]">We offer expert plumbing solutions for your home — from fixing leaks and clogged
+            drains to full bathroom and kitchen installations. Trusted, affordable, and always on time.</p>
+        </li>
         <li><a
             class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Commercial Service</a></li>
-      </ul>
-      <ul class=" service space-y-[26px]">
+            href="">Commercial Service</a>
+          <p class="mt-1.5 ml-[26px]">We specialize in plumbing solutions for offices, restaurants, retail
+            spaces, and
+            industrial buildings. From regular maintenance to large-scale installations.</p>
+        </li>
         <li><a
             class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Maintenance</a></li>
-        <li><a
-            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Residental Service</a></li>
-      </ul>
-      <ul class=" service space-y-[26px]">
-        <li><a
-            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Maintenance</a></li>
-        <li><a
-            class="pl-[25px] text-sm font-medium leading-[100%] text-black hover:text-secondary transition-all duration-500"
-            href="">Residental Service</a></li>
+            href="">Maintenance</a>
+          <p class="mt-1.5 ml-[26px]">Regular plumbing maintenance helps prevent costly repairs and keeps
+            your system
+            running efficiently. We offer scheduled checkups, pipe inspections.</p>
+        </li>
       </ul>
     </div>
   </section>
 
-  <!-- image bg -->
-  <section class="w-full max-w-[1440px] mx-auto">
-    <img class="w-full" src="src/assets/img/plumber-image.png" alt="image">
+  <!-- Commercial Service -->
+  <section class="container">
+    <div class="flex flex-col md:flex-row items-center lg:items-stretch">
+      <div class="w-full md:w-[53.846%] lg:pt-[38px] lg:pb-[37px] relative z-10">
+        <img class="w-full" src="src/assets/img/serviceman.jpg" alt="service">
+      </div>
+      <div
+        class="bg-secondary w-full md:w-[72.735%] lg:-ml-40 xl:-ml-[311px] pl-5 pr-5 xl:pr-[46px] flex items-center md:justify-end">
+        <div class="max-w-[432px] py-5 lg:py-0 xlmt-2">
+          <h2 class="h1 text-white mb-6">Commercial Service</h2>
+          <p class="text-sm text-white leading-4">We specialize in plumbing services for commercial properties such as
+            offices, restaurants, and retail spaces.
+            From routine maintenance to large-scale installations, our expert technicians ensure your systems run
+            smoothly with minimal disruption to your business.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Our Dedicated Team section -->
-  <section class="container mt-[63px] mb-[69px]">
+  <section class="container mt-[87px] mb-[69px]">
     <div class="text-center sm:px-10 md:px-[94px]">
       <h3 class="mb-2">Our Dedicated Team</h3>
       <p class="line-clamp-2">Our team of experienced and certified plumbers is committed to delivering top-quality
@@ -269,7 +200,7 @@
   <!-- Testiomonial section -->
   <section>
     <div
-      class="max-w-[1440px] mx-auto mt-[108px] bg-cover bg-center bg-no-repeat relative after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-black/70"
+      class="max-w-[1440px] mx-auto mt-[97px] bg-cover bg-center bg-no-repeat relative after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-black/70"
       style="background-image: url(src/assets/img/testimonial-bg.png);">
       <div class="container pt-[45px] pb-[33px] text-center relative z-20">
         <h3 class="text-[#EEFF06] mb-10 mt-0.5 -ml-2">Testimonial</h3>
@@ -313,9 +244,9 @@
   </section>
 
   <!-- our recent blogs section -->
-  <section class="container mt-[72px] mb-[50px]">
+  <section class="container mt-[72px] mb-10">
     <h3>our recent blogs</h3>
-    <div class="grid sm:grid-cols-3 text-center sm:text-start mt-12 space-y-4 gap-5 lg:gap-16 xl:gap-[90px]">
+    <div class="grid sm:grid-cols-3 text-center sm:text-start mt-[46px] space-y-4 gap-5 lg:gap-16 xl:gap-[90px]">
       <div class="">
         <div>
           <img class="w-full" src="src/assets/img/blogs-image-1.jpg" alt="blogs-image">
@@ -358,9 +289,11 @@
       <div class="container pb-[25px] flex flex-col lg:flex-row justify-between text-white -mt-0.5">
         <div class="w-full lg:w-[476px] sm:pr-[114px] lg:ml-[3px] pb-6">
           <a href="#"><img src="src/assets/img/logo-black.png" alt="logo"></a>
-          <p class="text-xs leading-3.5 mt-[26px] -ml-px">Trusted plumbing solutions since 1995. From emergency repairs
-            to full installations, we’re your local experts for reliable and affordable service. Proudly serving homes
-            and businesses with integrity and professionalism.</p>
+          <p class="text-xs leading-3.5 mt-[27px] -ml-px">Lore Issue is simply dummy text of the printing and
+            typesetting industry. Lore Issue
+            has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
           <div class="flex items-center gap-5 mt-[15px]">
             <a href="#">
               <svg class="fill-[#DD3142] hover:fill-white transition-all duration-500"
@@ -387,7 +320,7 @@
         </div>
         <div class="w-full lg:w-[calc(100%-476px)] flex flex-wrap sm:flex-nowrap justify-between gap-4">
           <div class="w-[149px] ">
-            <h6 class="text-base font-bold uppercase mb-4 lg:mb-10 text-secondary">Our Services</h6>
+            <h6 class="text-base font-bold uppercase mb-[4] lg:mb-[41px] text-secondary">Our Services</h6>
             <ul class="-mt-1.5 space-y-1.5 lg:space-y-[11px]">
               <li><a href="#" class="hover:text-secondary transition-colors duration-500">Plumber Service</a></li>
               <li><a href="#" class="hover:text-secondary transition-colors duration-500">Bathroom Plumbing Service</a>
@@ -402,7 +335,7 @@
             </ul>
           </div>
           <div class="w-[151px] xl:ml-6 ">
-            <h6 class="text-base font-bold uppercase mb-4 lg:mb-[41px] text-secondary">Contact </h6>
+            <h6 class="text-base font-bold uppercase mb-4 lg:mb-[42px] text-secondary">Contact </h6>
             <p class="text-sm leading-[15px] mb-9">1800-9938-2839 <span
                 class="text-xs block">support@plumberpoint.com</span></p>
             <p class="text-sm leading-[15px] mb-[35px]">A-507 Mandoli <span class="text-xs block">New Delhi,
@@ -410,7 +343,7 @@
             <p class="text-sm leading-[15px]">Mon-Sat 9.00-15:00 <span class="text-xs block">Sunday CLOSED</span></p>
           </div>
           <div class="w-[260px] ">
-            <h6 class="text-base font-bold uppercase mb-4 text-secondary">Recent Post</h6>
+            <h6 class="text-base font-bold uppercase mb-[17px] text-secondary">Recent Post</h6>
             <div class="flex items-start mb-[15px]">
               <div class="w-20 pr-3">
                 <img class="w-full" src="src/assets/img/plumber-image-3.png" alt="plumber-image">
