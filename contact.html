@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="./src/assets/icon/logo-small.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plumber | Service</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+  <!-- Header section -->
+  <header class="bg-white shadow-3xl pt-2 pb-2.5 sticky top-0 z-50">
+    <div class="container">
+      <div class="flex items-start lg:items-center justify-between">
+        <a class="w-24 sm:w-[165px]" href="#">
+          <img src="src/assets/img/logo.png" alt="logo">
+        </a>
+        <div id="menu" class="hidden lg:flex flex-col lg:flex-row gap-5 lg:gap-10 pt-8 lg:pt-0">
+          <ul class="flex flex-col lg:flex-row items-center gap-4 lg:gap-[38px] mt-1.5">
+            <li><a data-title="Home" class="menu-li-a " href="index.html">Home</a></li>
+            <li><a data-title="About us" class="menu-li-a" href="about.html">About us</a>
+            </li>
+            <li class="-mr-[7px]"><a data-title="Services" class="menu-li-a" href="#">Services</a></li>
+            <li><a data-title="Project" class="menu-li-a" href="project.html">Project</a></li>
+            <li><a data-title="Blogs" class="menu-li-a" href="blog.html">Blogs</a></li>
+            <li><a data-title="Contact" class="menu-li-a font-bold border-b-2 border-secondary" href="#">Contact</a>
+            </li>
+          </ul>
+          <a class="bg-secondary pl-[0.563rem] pr-2 pt-3 pb-2.5 text-xs text-white uppercase font-bold rounded-ex-sm whitespace-nowrap hover:bg-primary transition-all duration-500 block"
+            href="#">Request a call
+            Back</a>
+        </div>
+        <div id="hamburger-icon" class="lg:hidden w-24 sm:w-[165px]">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 ml-auto">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </div>
+        <div id="close-icon" class="hidden w-24 sm:w-[165px]">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 float-end">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="max-w-[1440px] mx-auto bg-center bg-cover bg-no-repeat relative"
+    style="background-image: url(src/assets/img/plumber-company.png);">
+    <div class="absolute left-0 top-0 right-0 bottom-0 bg-linear-to-r/srgb from-secondary to-gray/0"></div>
+    <div class=" container pt-[104px] pb-[72px]">
+      <div class="max-w-[432px] relative z-30">
+        <h1 class="font-black text-[#EEFF06] uppercase">Contact us</h1>
+        <p class="text-sm text-white leading-4 mt-[19px]">With years of experience and a passion for excellence, we
+          provide reliable plumbing solutions for both homes and businesses. From small repairs to full system
+          installations, our licensed team is committed to quality workmanship and customer satisfaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get in touch section -->
+  <section class="container mt-14">
+    <div class="px-[50px]">
+      <h2 class="text-[40px] text-black font-bold text-center">Get in touch</h2>
+      <form class="mt-[30px] ml-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-[54px] gap-x-10">
+          <div>
+            <label for="name" class="block text-base text-black leading-3">Full name</label>
+            <input id="name" type="text"
+              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
+          </div>
+          <div>
+            <label for="email" class="block text-base text-black leading-3">Email address</label>
+            <input id="email" type="email"
+              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
+          </div>
+          <div>
+            <label for="text" class="block text-base text-black leading-3">Contact number</label>
+            <input id="text" type="text"
+              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
+          </div>
+          <div>
+            <label for="subject" class="block text-base text-black leading-3">Subject</label>
+            <input id="subject" type="text"
+              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
+          </div>
+        </div>
+        <div class="mt-14">
+          <label for="description" class="block text-base text-black leading-3">Description</label>
+          <textarea id="description" rows="4"
+            class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3"></textarea>
+        </div>
+        <div class="flex justify-end mt-[26px]">
+          <button type="submit" class="px-6 pt-4 pb-[13px] uppercase text-xl text-white bg-secondary rounded-full">Send
+            A
+            MEssage</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- our recent blogs section -->
+  <section class="container mt-[72px] mb-10">
+    <h3>our recent blogs</h3>
+    <div class="grid sm:grid-cols-3 text-center sm:text-start mt-[46px] space-y-4 gap-5 lg:gap-16 xl:gap-[90px]">
+      <div class="">
+        <div>
+          <img class="w-full" src="src/assets/img/blogs-image-1.jpg" alt="blogs-image">
+        </div>
+
+        <p class="mt-[17px] text-xl text-black leading-6">Reliable plumbing solutions for your home, done
+          right the first time.
+          <span class="text-xs block mt-3 ml-0.5 leading-3.5">Don’t deal with leaks, clogs, or outdated fixtures alone.
+            Our expert plumbers are ready to provide fast, efficient service to you&hellip;</span>
+        </p>
+      </div>
+      <div>
+        <div class="-mt-0.5">
+          <img class="w-full" src="src/assets/img/blogs-image-2.jpg" alt="blogs-image">
+        </div>
+
+        <p class="mt-[17px] text-xl text-black leading-6">Reliable plumbing solutions for your home, done
+          right the first time.
+          <span class="text-xs block mt-3 ml-0.5 leading-3.5">Don’t deal with leaks, clogs, or outdated fixtures alone.
+            Our expert plumbers are ready to provide fast, efficient service to you&hellip;</span>
+        </p>
+      </div>
+      <div>
+        <div class="-mt-0.5">
+          <img class="w-full" src="src/assets/img/blogs-image-3.jpg" alt="blogs-image">
+        </div>
+
+        <p class="mt-[17px] text-xl text-black leading-6">Reliable plumbing solutions for your home, done
+          right the first time.
+          <span class="text-xs block mt-3 ml-0.5 leading-3.5">Don’t deal with leaks, clogs, or outdated fixtures alone.
+            Our expert plumbers are ready to provide fast, efficient service to you&hellip;</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <section class="bg-black pt-[31px] -mt-0.5">
+    <div class="border-b-2 ">
+      <div class="container pb-[25px] flex flex-col lg:flex-row justify-between text-white -mt-0.5">
+        <div class="w-full lg:w-[476px] sm:pr-[114px] lg:ml-[3px] pb-6">
+          <a href="#"><img src="src/assets/img/logo-black.png" alt="logo"></a>
+          <p class="text-xs leading-3.5 mt-[27px] -ml-px">Trusted plumbing solutions since 1995. From emergency repairs
+            to full installations, we’re your local experts for reliable and affordable service. Proudly serving homes
+            and businesses with integrity and professionalism.</p>
+          <div class="flex items-center gap-5 mt-[15px]">
+            <a href="#">
+              <svg class="fill-[#DD3142] hover:fill-white transition-all duration-500"
+                xmlns="http://www.w3.org/2000/svg" width="6" height="12" fill="none">
+                <path
+                  d="M4.905 1.992H6V.085A14.144 14.144 0 0 0 4.404 0c-1.58 0-2.661.994-2.661 2.82V4.5H0v2.133h1.743V12H3.88V6.633h1.672L5.818 4.5H3.879V3.031c0-.617.167-1.039 1.026-1.039Z" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="fill-[#DD3142] hover:fill-white transition-all duration-500"
+                xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+                <path
+                  d="M6 4.8v2.4h3.395A3.607 3.607 0 0 1 6 9.6 3.604 3.604 0 0 1 2.4 6c0-1.985 1.615-3.6 3.6-3.6.86 0 1.688.308 2.332.869l1.576-1.81A5.946 5.946 0 0 0 6 0C2.692 0 0 2.692 0 6s2.692 6 6 6 6-2.692 6-6V4.8H6Z" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="fill-[#DD3142] hover:fill-white transition-all duration-500"
+                xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none">
+                <path
+                  d="M14 1.42a5.715 5.715 0 0 1-1.654.479A2.988 2.988 0 0 0 13.61.225a5.559 5.559 0 0 1-1.82.733A2.809 2.809 0 0 0 9.692 0C8.103 0 6.824 1.36 6.824 3.029c0 .24.02.47.067.69C4.505 3.596 2.393 2.39.975.552a3.177 3.177 0 0 0-.393 1.53c0 1.05.512 1.979 1.275 2.517A2.722 2.722 0 0 1 .56 4.226v.033c0 1.471.995 2.694 2.3 2.975-.234.068-.489.1-.753.1a2.41 2.41 0 0 1-.543-.052c.371 1.2 1.427 2.08 2.681 2.11A5.58 5.58 0 0 1 0 10.641 7.777 7.777 0 0 0 4.403 12c5.282 0 8.169-4.615 8.169-8.616a8.18 8.18 0 0 0-.01-.391A5.911 5.911 0 0 0 14 1.42Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-[calc(100%-476px)] flex flex-wrap sm:flex-nowrap justify-between gap-4">
+          <div class="w-[149px] ">
+            <h6 class="text-base font-bold uppercase mb-[4] lg:mb-[41px] text-secondary">Our Services</h6>
+            <ul class="-mt-1.5 space-y-1.5 lg:space-y-[11px]">
+              <li><a href="#" class="hover:text-secondary transition-colors duration-500">Plumber Service</a></li>
+              <li><a href="#" class="hover:text-secondary transition-colors duration-500">Bathroom Plumbing Service</a>
+              </li>
+              <li><a href="#" class="hover:text-secondary transition-colors duration-500">Kitchen Plumbing Service</a>
+              </li>
+              <li><a href="#" class="hover:text-secondary transition-colors duration-500">Roof Plumbing Service</a></li>
+              <li><a href="#" class="hover:text-secondary transition-colors duration-500">Bathroom Plumbing Service</a>
+              </li>
+              <li><a href="#" class="hover:text-secondary transition-colors duration-500">Kitchen Plumbing Service</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-[151px] xl:ml-6 ">
+            <h6 class="text-base font-bold uppercase mb-4 lg:mb-[42px] text-secondary">Contact </h6>
+            <p class="text-sm leading-[15px] mb-9">1800-9938-2839 <span
+                class="text-xs block">support@plumberpoint.com</span></p>
+            <p class="text-sm leading-[15px] mb-[35px]">A-507 Mandoli <span class="text-xs block">New Delhi,
+                India</span></p>
+            <p class="text-sm leading-[15px]">Mon-Sat 9.00-15:00 <span class="text-xs block">Sunday CLOSED</span></p>
+          </div>
+          <div class="w-[260px] ">
+            <h6 class="text-base font-bold uppercase mb-[17px] text-secondary">Recent Post</h6>
+            <div class="flex items-start mb-[15px]">
+              <div class="w-20 pr-3">
+                <img class="w-full" src="src/assets/img/plumber-image-3.png" alt="plumber-image">
+              </div>
+              <div class="w-[calc(100%-80px)] -mt-[5px]">
+                <span class="text-[10px] font-medium">Sewer Line Repair</span>
+                <p class="text-[8px] mt-1">Lore Issue . Simply dummy text . The printing and typesetting industry. Lore
+                  Issue
+                  has been the industry'.</p>
+              </div>
+            </div>
+            <div class="flex items-start mb-[23px]">
+              <div class="w-20 pr-3">
+                <img class="w-full" src="src/assets/img/plumber-image-3.png" alt="plumber-image">
+              </div>
+              <div class="w-[calc(100%-80px)] -mt-[5px]">
+                <span class="text-[10px] font-medium">Sewer Line Repair</span>
+                <p class="text-[8px] mt-1">Lore Issue . Simply dummy text . The printing and typesetting industry. Lore
+                  Issue
+                  has been the industry'.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-20 pr-3">
+                <img class="w-full" src="src/assets/img/plumber-image-3.png" alt="plumber-image">
+              </div>
+              <div class="w-[calc(100%-80px)] -mt-[5px]">
+                <span class="text-[10px] font-medium">Sewer Line Repair</span>
+                <p class="text-[8px] mt-1">Lore Issue . Simply dummy text . The printing and typesetting industry. Lore
+                  Issue
+                  has been the industry'.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container flex flex-col sm:flex-row items-center justify-between gap-2 text-secondary pt-[7px] pb-3">
+      <p class="text-[10px] ml-px">©Copyright 2020 Techwero Systems.</p>
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-[38px] text-[10px]">
+        <a href="#" class="hover:text-white transition-colors duration-500">Term of Services</a>
+        <a href="#" class="hover:text-white transition-colors duration-500">Privacy & policy</a>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
