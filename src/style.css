@@ -75,6 +75,12 @@
     .menu-li-a{
       @apply text-sm font-medium text-primary inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible after:transform after:scale-x-0 border-b-2 border-white transition-all duration-500 hover:border-secondary after:hover:scale-x-100 after:origin-left 
     }
+    .contact span{
+      @apply text-sm font-medium text-secondary
+    }
+    .contact p{
+      @apply text-sm text-black
+    }
     
   }
 

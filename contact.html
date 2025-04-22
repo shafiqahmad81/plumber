@@ -66,37 +66,26 @@
 
   <!-- Get in touch section -->
   <section class="container mt-14">
-    <div class="px-[50px]">
+    <div class="px-5 md:px-8 lg:px-[50px]">
       <h2 class="text-[40px] text-black font-bold text-center">Get in touch</h2>
-      <form class="mt-[30px] ml-1">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-[54px] gap-x-10">
-          <div>
-            <label for="name" class="block text-base text-black leading-3">Full name</label>
-            <input id="name" type="text"
-              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
-          </div>
-          <div>
-            <label for="email" class="block text-base text-black leading-3">Email address</label>
-            <input id="email" type="email"
-              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
-          </div>
-          <div>
-            <label for="text" class="block text-base text-black leading-3">Contact number</label>
-            <input id="text" type="text"
-              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
-          </div>
-          <div>
-            <label for="subject" class="block text-base text-black leading-3">Subject</label>
-            <input id="subject" type="text"
-              class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3" />
-          </div>
+      <form class="mt-[26px] ml-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-[51px] gap-x-10">
+          <input type="text" placeholder="Full name"
+            class="w-full text-base text-[#707070] pb-2 border-b border-[#707070] focus:outline-none placeholder:text-black focus:placeholder-transparent " />
+
+          <input type="email" placeholder="Email address"
+            class="w-full text-base text-[#707070] pb-2 border-b border-[#707070] focus:outline-none placeholder:text-black focus:placeholder-transparent" />
+          <input type="text" placeholder="Contact number
+            "
+            class="w-full text-base text-[#707070] pb-2 border-b border-[#707070] focus:outline-none placeholder:text-black focus:placeholder-transparent" />
+          <input type="text" placeholder="Subject"
+            class="w-full text-base text-[#707070] pb-2 border-b border-[#707070] focus:outline-none placeholder:text-black focus:placeholder-transparent" />
         </div>
-        <div class="mt-14">
-          <label for="description" class="block text-base text-black leading-3">Description</label>
-          <textarea id="description" rows="4"
-            class="w-full border-b border-[#707070] focus:outline-none focus:border-black h-3"></textarea>
+        <div class="mt-12 -ml-1">
+          <textarea rows="1" placeholder="Description"
+            class="w-full text-base text-[#707070] pb-2 border-b border-[#707070] focus:outline-none placeholder:text-black focus:placeholder-transparent"></textarea>
         </div>
-        <div class="flex justify-end mt-[26px]">
+        <div class="flex justify-center sm:justify-end mt-[27px] ">
           <button type="submit" class="px-6 pt-4 pb-[13px] uppercase text-xl text-white bg-secondary rounded-full">Send
             A
             MEssage</button>
@@ -105,10 +94,45 @@
     </div>
   </section>
 
-
+  <!-- contact section -->
+  <section class="contact bg-[#F9F9F9] mt-[60px] py-[31px]">
+    <div class="container flex flex-col md:flex-row">
+      <div class="w-full md:w-[43.418%] pr-10 lg:pr-24 xl:pr-[131px] mt-5 order-2 md:order-1">
+        <div class="mb-[34px]">
+          <h6 class="text-lg font-bold text-secondary mb-[7px] leading-4">Contact Us</h6>
+          <p class="text-sm text-black leading-[17px]">It is a long established fact that a reader will be distracted by
+            the
+            readable
+            content of a
+            page when looking at its layout.</p>
+        </div>
+        <div class="space-y-6">
+          <div class="pt-0.5">
+            <span>Business hours:</span>
+            <p>Monday to Saturday 9:30 am - 4:30 pm</p>
+          </div>
+          <div class="mb-[22px] -mt-0.5">
+            <span>Address:</span>
+            <p>A-67 south Ex Delhi-11002</p>
+          </div>
+          <div class="mb-[21px]">
+            <span>Email:</span>
+            <p>abc@abc.com</p>
+          </div>
+          <div>
+            <span>Phone:</span>
+            <p class="leading-[21px]">1800 - 458495-4455</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-[56.496%] order-1 md:order-2">
+        <img src="src/assets/img/map.png" alt="map">
+      </div>
+    </div>
+  </section>
 
   <!-- our recent blogs section -->
-  <section class="container mt-[72px] mb-10">
+  <section class="container mt-[66px] mb-[72px]">
     <h3>our recent blogs</h3>
     <div class="grid sm:grid-cols-3 text-center sm:text-start mt-[46px] space-y-4 gap-5 lg:gap-16 xl:gap-[90px]">
       <div class="">
@@ -205,7 +229,7 @@
             <p class="text-sm leading-[15px]">Mon-Sat 9.00-15:00 <span class="text-xs block">Sunday CLOSED</span></p>
           </div>
           <div class="w-[260px] ">
-            <h6 class="text-base font-bold uppercase mb-[17px] text-secondary">Recent Post</h6>
+            <h6 class="text-base font-bold uppercase mb-[18px] text-secondary">Recent Post</h6>
             <div class="flex items-start mb-[15px]">
               <div class="w-20 pr-3">
                 <img class="w-full" src="src/assets/img/plumber-image-3.png" alt="plumber-image">
